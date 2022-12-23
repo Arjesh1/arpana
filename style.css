@@ -1,0 +1,235 @@
+body {
+  background: rgb(233, 166, 233);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+} /*# sourceMappingURL=style.css.map */
+/* default styles */
+ul {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+/* hero section */
+.image {
+  height: 5vh;
+  position: relative;
+}
+.image img {
+  width: 100%;
+  height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.image div {
+  position: absolute;
+  top: 13rem;
+  left: 55rem;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.image div h1 {
+  font-size: 10vh;
+  font-weight: bolder;
+}
+.image div h2 {
+  font-size: 5vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+.nav {
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 1rem 2rem;
+  background: white;
+  color: rgb(4, 109, 109);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.nav .logo {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  gap: 2.3rem;
+}
+.nav .logo div:nth-child(1) h1 {
+  font-size: 1.8rem;
+}
+.nav .logo div:nth-child(2) h1 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.nav .logo .line::before {
+  content: "";
+  background: rgb(239, 5, 247);
+  height: 80%;
+  width: 3px;
+  left: 43.5%;
+  top: 10%;
+  position: absolute;
+}
+.nav .right .navigation {
+  padding: 0;
+  margin: 0;
+  gap: 2.5rem;
+  font-size: 1.3rem;
+}
+.nav .right .navigation li a:hover {
+  color: purple;
+}
+
+.section5 {
+  margin-top: 50rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+.section5 h1 {
+  font-size: 3rem;
+}
+.section5 .about-container {
+  padding: 1rem;
+}
+.section5 .about-container .left {
+  width: 50%;
+  padding: 0 2rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.section5 .about-container .left .bg {
+  width: 95%;
+  height: 65%;
+  background: rgb(236, 166, 177);
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+.section5 .about-container .left img {
+  width: 100%;
+}
+.section5 .about-container .right {
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+.section5 .about-container .right h1 {
+  font-size: 3.5rem;
+}
+.section5 .about-container .right p:nth-child(2) {
+  font-weight: 500;
+}
+.section5 .about-container .right p:nth-child(3) {
+  font-weight: 300;
+}
+.section5 .about-container .right a {
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  background: #41C7BF;
+  width: 10rem;
+  padding: 5px 5px 5px 13px;
+  border-radius: 50px;
+  justify-content: center;
+}
+.section5 .about-container .right > div {
+  flex-direction: column;
+}
+.section5 .about-container .right > div .tag {
+  font-weight: 500;
+}
+.section5 .about-container .right > div div {
+  display: flex;
+  gap: 3rem;
+}
+.section5 .about-container .right > div div span {
+  padding: 0, 5rem 0.7rem;
+  border-radius: 0.8rem;
+}
+.section5 .about-container .right > div div span:hover {
+  cursor: pointer;
+  background: purple;
+  padding: 5px;
+  color: rgb(5, 5, 5);
+}
+
+.container {
+  display: block;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.container img {
+  width: 200px;
+  height: 200px;
+}
+
+.small {
+  width: 180px;
+  height: auto;
+  position: relative;
+  margin: 3px;
+  border-radius: 5px;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+a div {
+  position: relative;
+  margin: auto auto;
+  text-align: center;
+}
+
+.lightbox:target {
+  display: flex;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.container p {
+  font-size: 20px;
+  color: white;
+  font-family: "Poiret One";
+}/*# sourceMappingURL=style.css.map */
